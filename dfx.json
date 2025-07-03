@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "icdapp_backend": {
+      "main": "src/icdapp_backend/main.mo",
+      "type": "motoko"
+    },
+    "icdapp_frontend": {
+      "dependencies": [
+        "icdapp_backend"
+      ],
+      "source": [
+        "src/icdapp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icdapp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
