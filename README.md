@@ -93,7 +93,3 @@ Your production-ready ICP dApp includes:
 ## 🌐 Support
 
 For issues, feature requests, or contributions, visit our [official website](https://g53tt-xyaaa-aaaam-aenbq-cai.icp0.io/#).
-
----
-
-*Accelerate your Web3 development journey with AI-powered ICP dApp generation.*
