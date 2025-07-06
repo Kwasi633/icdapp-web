@@ -1,59 +1,99 @@
-# `icdapp`
+# icdApp
 
-Welcome to your new `icdapp` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+**🤖 AI-Powered ICP Development Tool**
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+icdApp is a VS Code extension that converts natural language descriptions into production-ready Internet Computer (ICP) dApps. Describe your app idea and it creates complete fullstack decentralized applications with Motoko/Rust backends and React/Next.js frontends ready to deploy.
 
-To learn more before you start working with `icdapp`, see the following documentation available online:
+## 🎯 Problem → Solution → Impact
 
-- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
-- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
-- [Motoko Programming Language Guide](https://internetcomputer.org/docs/current/motoko/main/motoko)
-- [Motoko Language Quick Reference](https://internetcomputer.org/docs/current/motoko/main/language-manual)
+**Problem:** Building decentralized applications on Internet Computer requires considerable blockchain knowledge, extensive setup and weeks of development time.
 
-If you want to start working on your project right away, you might want to try the following commands:
+**Solution:** VS Code extension that converts natural language descriptions into production-ready ICP dApps.
+- **Input:** "Build a crowdfunding platform" 
+- **Output:** Complete Motoko/Rust backend + React/Next.js frontend
 
-```bash
-cd icdapp/
-dfx help
-dfx canister --help
+**Impact:** Reduces ICP development time from weeks to minutes. Accelerates Web3 development for 27M+ VS Code users with deployment-ready dApps.
+
+## 🚀 Key Features
+
+- **🤖 AI-Powered Generation**: Transform natural language into functional dApp code
+- **⚡ Production-Ready Output**: Complete fullstack applications ready for deployment
+- **🔧 Multiple Tech Stacks**: React.js/Next.js frontends with Motoko/Rust backends
+- **📊 Session Management**: Track and manage active build sessions
+- **✅ Project Validation**: Automatic project structure verification
+
+## 📋 Commands
+
+| Command | Description |
+|---------|-------------|
+| `icdApp: Build Fullstack ICP dApp` | Launch the AI-powered dApp builder wizard |
+| `icdApp: Show Active Build Sessions` | View and manage active builds |
+| `icdApp: Validate ICP dApp Project` | Validate existing project structure |
+| `icdApp: Open IcdApp Output` | View extension logs and build details |
+
+## 🚀 Quick Start
+
+### 1. Installation
+[Install from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=raseai.icdapp) or search **icdApp** in VS Code extensions tab.
+
+### 2. Create Your First dApp
+- Open or create a workspace folder
+- Press `Ctrl+Shift+P` and type **icdApp**
+- Select "icdApp: Build Fullstack ICP dApp"
+- Follow the interactive wizard:
+  - Enter your project name
+  - Choose frontend framework (React or Next.js)
+  - Select backend language (Motoko or Rust)
+  - **Describe your dApp idea in natural language**
+
+### 3. Deploy Your dApp
+- The extension generates your complete ICP dApp project
+- Follow the deployment instructions provided after build completion
+
+## 💡 Usage Examples
+
+### DeFi Lending Platform
+```
+Project Name: defi-lending
+Frontend: Next.js
+Backend: Rust
+Description: "Build a decentralized lending platform."
 ```
 
-## Running the project locally
-
-If you want to test your project locally, you can use the following commands:
-
-```bash
-# Starts the replica, running in the background
-dfx start --background
-
-# Deploys your canisters to the replica and generates your candid interface
-dfx deploy
+### NFT Marketplace
+```
+Project Name: nft-marketplace
+Frontend: React
+Backend: Motoko
+Description: "Create an NFT marketplace for digital art"
 ```
 
-Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
-
-If you have made changes to your backend canister, you can generate a new candid interface with
-
-```bash
-npm run generate
+### Crowdfunding Platform
+```
+Project Name: crowd-funding
+Frontend: React
+Backend: Motoko
+Description: "Build a decentralized crowdfunding platform"
 ```
 
-at any time. This is recommended before starting the frontend development server, and will be run automatically any time you run `dfx deploy`.
+## 📋 Requirements
 
-If you are making frontend changes, you can start a development server with
+- **Node.js**: For frontend development and package management
+- **DFX**: Internet Computer SDK for canister deployment
+- **VS Code Workspace**: An open folder in VS Code to create your project
 
-```bash
-npm start
-```
+## 🔧 What Gets Generated
 
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
+Your production-ready ICP dApp includes:
+- **Smart Contracts**: Motoko or Rust canisters with business logic
+- **Frontend Application**: React/Next.js with Web3 integration
+- **Configuration Files**: dfx.json, package.json, deployment scripts
+- **Documentation**: Setup and deployment instructions
 
-### Note on frontend environment variables
+## 🌐 Support
 
-If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
+For issues, feature requests, or contributions, visit our [official website](https://g53tt-xyaaa-aaaam-aenbq-cai.icp0.io/#).
 
-- set`DFX_NETWORK` to `ic` if you are using Webpack
-- use your own preferred method to replace `process.env.DFX_NETWORK` in the autogenerated declarations
-  - Setting `canisters -> {asset_canister_id} -> declarations -> env_override to a string` in `dfx.json` will replace `process.env.DFX_NETWORK` with the string in the autogenerated declarations
-- Write your own `createActor` constructor
+---
+
+*Accelerate your Web3 development journey with AI-powered ICP dApp generation.*
