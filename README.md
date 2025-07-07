@@ -29,7 +29,6 @@ icdApp is a VS Code extension that converts natural language descriptions into p
 | `icdApp: Build Fullstack ICP dApp` | Launch the AI-powered dApp builder wizard |
 | `icdApp: Show Active Build Sessions` | View and manage active builds |
 | `icdApp: Validate ICP dApp Project` | Validate existing project structure |
-| `icdApp: Open IcdApp Output` | View extension logs and build details |
 
 ## 🚀 Quick Start
 

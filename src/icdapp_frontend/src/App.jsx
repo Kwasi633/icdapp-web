@@ -577,7 +577,7 @@ function App() {
               </div>
             </div>
             <div className="header__actions">
-              <span className="version-badge">v1.0.0</span>
+              <span className="version-badge">v0.0.5</span>
               <button onClick={openVSCodeExtension} className="btn btn--primary btn--small btn--with-icon">
                 <ExternalLink className="btn__icon" />
                 Open Extension
